@@ -8,7 +8,18 @@
 </head>
 <body>
     <label for="redled">Red</label>
-    <input id="redled" type="range" min="0" max="255" />
+    <input id="redled" type="range" min="0" max="255" list="tickmarks" />
+    <datalist id="tickmarks">
+        <option value="0" label="0%">
+        <option value="31">
+        <option value="63">
+        <option value="95">
+        <option value="127" label="50%">
+        <option value="159">
+        <option value="191">
+        <option value="223">
+        <option value="255" label="100%">
+    </datalist>
     <span id="redledval"></span>
     <script src="/socket.io/socket.io.js"></script>
     <script>
