@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon node index.js",
+    "server": "nodemon node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,6 +14,7 @@
   "dependencies": {
     "express": "^4.16.2",
     "nodemon": "^1.14.12",
-    "serialport": "^6.0.5"
+    "serialport": "^6.0.5",
+    "socket.io": "^2.0.4"
   }
 }

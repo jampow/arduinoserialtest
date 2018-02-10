@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Serial Port Communication with Arduino</title>
+</head>
+<body>
+    <label for="redled">Red</label>
+    <input id="redled" type="range" min="0" max="255" />
+    <span id="redledval"></span>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io();
+        var redled = document.getElementById('redled');
+        var redledval = document.getElementById('redledval');
+        redled.onchange = function(e){
+            socket.emit('redled', e.target.value)
+            redledval.innerText = e.target.value;
+        }
+    </script>
+</body>
+</html>
