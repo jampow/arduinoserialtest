@@ -1,12 +1,9 @@
 {
   "name": "node-serialport",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Testing serial communication with arduino and nodejs",
   "scripts": {
-    "start": "nodemon node index.js",
-    "server": "nodemon node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon node server.js"
   },
   "keywords": [],
   "author": "",
